@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+
+
+.blockPrincipal{
+    height: 600px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin-top: 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+
+.formulaire{
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    
+
+   
+
+}
+.photo{
+    width: 40%;
+    height: 100%;
+    background-image: url(https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.formulaire form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.formulaire input{
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid grey;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+
+}
+.formulaire select{
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid grey;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.cards{
+    width: 450px;
+    height: 500px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    input{
+        border: none;
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+    
+    }
+    select{
+        border: none;
+        font-family: "Roboto", sans-serif;
+        width: auto;
+        font-size: 15px;
+
+    }
+   
+}
+
+section{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+.nivStock{
+    width: 10%;
+    height: 100%;
+    background-color: rgba(128,128,128,0.3);
+}
+.info{
+    width: 90%;
+    height: 100%;
+}
+
+.progression{
+    background-color: green;
+    height: 100%;
+    position: relative;
+    bottom: 0;
+    z-index: 99;
+}
+.deleteCard{
+    height: 8%;
+    width: 100%;
+    text-align: end;
+    padding: 10px;
+  
+}
+i{
+    font-size: 25px;
+    color: grey;
+    padding-right: 5px;
+}
+
+.infoBloc{
+    height: 92%;
+    width: auto;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoBloc div{
+    height: 45px;
+    // padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.productQuantite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.productPV{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.productPA{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.productItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.productDegre{
+    display: flex;
+    flex-direction: row;
+   }
+
+.move{
+    position: relative;
+    animation: move 10s linear ;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-200%);
+}
